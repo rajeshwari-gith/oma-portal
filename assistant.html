@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assistant Dashboard</title>
+  <link rel="stylesheet" href="zen.css">
+</head>
+<body style="padding:40px;">
+
+  <h1>Assistant Director Dashboard</h1>
+  <button onclick="logout()">Logout</button>
+
+  <h2 style="margin-top:30px;">Create Event</h2>
+
+  <input id="title" placeholder="Event Title" style="display:block;margin-top:10px;padding:8px;width:300px;">
+  <input id="date" placeholder="Date" style="display:block;margin-top:10px;padding:8px;width:300px;">
+  <input id="location" placeholder="Location" style="display:block;margin-top:10px;padding:8px;width:300px;">
+  <textarea id="description" placeholder="Description" style="display:block;margin-top:10px;padding:8px;width:300px;"></textarea>
+
+  <button onclick="createEvent()" style="margin-top:10px;padding:8px;">Add Event</button>
+
+  <h2 style="margin-top:30px;">All Events</h2>
+  <div id="event-list"></div>
+
+  <script type="module" src="assistant.js"></script>
+
+</body>
+</html>
